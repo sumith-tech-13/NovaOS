@@ -1,7 +1,7 @@
 import type { ChatMessageItem } from "@/types";
 import { AI_RESPONSES } from "@/data";
 
-const API_URL = "http://localhost:3001/api/copilot/chat";
+const API_URL = "/api/copilot-chat";
 const TIMEOUT_MS = 15000;
 
 const KEYWORD_MAP: [RegExp, string][] = [
