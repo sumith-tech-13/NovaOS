@@ -1,0 +1,88 @@
+import type { PromptLibraryItem } from "@/types";
+
+export const PROMPT_LIBRARY: PromptLibraryItem[] = [
+  {
+    id: "p1", category: "operations",
+    title: "Daily Operations Summary",
+    content: "Generate a daily operations summary covering inventory levels, pending orders, active workflows, and any alerts that need attention.",
+    description: "Quick daily snapshot of business operations",
+    createdAt: "2026-06-01", updatedAt: "2026-06-28",
+  },
+  {
+    id: "p2", category: "operations",
+    title: "Inventory Restock Analysis",
+    content: "Analyze current inventory levels and recommend restock priorities based on sales velocity, lead times, and minimum threshold levels.",
+    description: "Smart inventory restock recommendations",
+    createdAt: "2026-06-05", updatedAt: "2026-06-25",
+  },
+  {
+    id: "p3", category: "operations",
+    title: "Vendor Performance Review",
+    content: "Review vendor performance metrics including delivery times, quality scores, pricing trends, and recommend vendor optimization strategies.",
+    description: "Evaluate and optimize vendor relationships",
+    createdAt: "2026-05-15", updatedAt: "2026-06-20",
+  },
+  {
+    id: "p4", category: "sales",
+    title: "Monthly Sales Deep Dive",
+    content: "Provide a comprehensive monthly sales analysis with revenue breakdown by category, top-performing products, conversion rates, and growth opportunities.",
+    description: "Comprehensive sales performance analysis",
+    createdAt: "2026-06-10", updatedAt: "2026-06-30",
+  },
+  {
+    id: "p5", category: "sales",
+    title: "Customer Follow-Up Email",
+    content: "Draft a professional follow-up email for a prospective client who requested a product demo, including key value propositions and a call to action.",
+    description: "Professional client follow-up template",
+    createdAt: "2026-06-12", updatedAt: "2026-06-12",
+  },
+  {
+    id: "p6", category: "sales",
+    title: "Quarterly Sales Forecast",
+    content: "Analyze historical sales data, current pipeline, and market trends to generate a quarterly sales forecast with revenue projections and risk factors.",
+    description: "Data-driven sales forecasting",
+    createdAt: "2026-06-01", updatedAt: "2026-06-15",
+  },
+  {
+    id: "p7", category: "hr",
+    title: "Employee Onboarding Plan",
+    content: "Create a structured 30-60-90 day onboarding plan for a new employee including training milestones, team introductions, and performance checkpoints.",
+    description: "Structured onboarding timeline",
+    createdAt: "2026-05-20", updatedAt: "2026-06-10",
+  },
+  {
+    id: "p8", category: "hr",
+    title: "Team Performance Review",
+    content: "Generate a team performance analysis with individual contributions, growth metrics, skill gaps, and recommendations for professional development.",
+    description: "Team performance and growth analysis",
+    createdAt: "2026-06-15", updatedAt: "2026-06-29",
+  },
+  {
+    id: "p9", category: "hr",
+    title: "Meeting Agenda & Minutes",
+    content: "Create a structured meeting agenda with discussion topics, time allocations, and a minutes template for action items and decisions.",
+    description: "Organized meeting documentation",
+    createdAt: "2026-06-08", updatedAt: "2026-06-08",
+  },
+  {
+    id: "p10", category: "finance",
+    title: "Monthly P&L Summary",
+    content: "Generate a profit and loss summary for the month with revenue breakdown, expense categories, margin analysis, and variance explanations.",
+    description: "Monthly profit and loss review",
+    createdAt: "2026-06-01", updatedAt: "2026-07-01",
+  },
+  {
+    id: "p11", category: "finance",
+    title: "Cash Flow Analysis",
+    content: "Analyze current cash flow position including accounts receivable aging, upcoming payables, runway projection, and working capital recommendations.",
+    description: "Cash flow health check",
+    createdAt: "2026-06-05", updatedAt: "2026-06-20",
+  },
+  {
+    id: "p12", category: "finance",
+    title: "Budget vs Actual Report",
+    content: "Compare budget allocations against actual spending across departments, highlight overruns, and suggest reallocation strategies.",
+    description: "Budget variance analysis",
+    createdAt: "2026-06-10", updatedAt: "2026-06-25",
+  },
+];
