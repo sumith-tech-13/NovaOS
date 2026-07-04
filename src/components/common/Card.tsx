@@ -126,12 +126,13 @@ export function AICard({ title = "AI Insight", children, className }: AICardProp
   );
 }
 
-export function EmptyCard({ icon: Icon = Inbox, title, description }: { icon?: React.ElementType; title: string; description?: string }) {
+export function EmptyCard({ icon: Icon = Inbox, title, description, children }: { icon?: React.ElementType; title: string; description?: string; children?: React.ReactNode }) {
   return (
     <Card className="flex flex-col items-center justify-center py-12 text-center" hover={false}>
       {Icon && <Icon className="h-8 w-8 text-text-tertiary mb-3" />}
       <p className="text-sm font-medium text-text-primary">{title}</p>
       {description && <p className="text-xs text-text-secondary mt-1 max-w-xs">{description}</p>}
+      {children && <div className="mt-3">{children}</div>}
     </Card>
   );
 }

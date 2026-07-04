@@ -15,7 +15,7 @@ const sizes = {
   lg: "h-10 px-5 text-sm",
 } as const;
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: keyof typeof variants;
   size?: keyof typeof sizes;
   asChild?: boolean;

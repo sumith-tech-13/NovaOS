@@ -41,7 +41,7 @@ export interface Workflow {
   id: string;
   type: "leave" | "expense" | "purchase" | "order";
   title: string;
-  status: "pending" | "approved" | "rejected";
+  status: "pending" | "active" | "approved" | "rejected";
   steps: WorkflowStep[];
   createdAt: string;
 }

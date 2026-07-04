@@ -6,14 +6,14 @@ import { cn } from "@/utils/cn";
 import { EMPLOYEES, DOCUMENTS } from "@/data";
 
 const PAGE_ACTIONS = [
-  { label: "Dashboard", path: "/", icon: LayoutDashboard, keywords: "home overview" },
-  { label: "AI Copilot", path: "/copilot", icon: Bot, keywords: "chat ai assistant" },
-  { label: "Employees", path: "/employees", icon: Users, keywords: "people team staff" },
-  { label: "Workflow", path: "/workflow", icon: GitBranch, keywords: "approval process" },
-  { label: "Inventory", path: "/inventory", icon: Package, keywords: "products stock" },
-  { label: "Documents", path: "/documents", icon: FileText, keywords: "files reports" },
-  { label: "Analytics", path: "/analytics", icon: BarChart3, keywords: "charts metrics" },
-  { label: "Settings", path: "/settings", icon: Settings, keywords: "preferences config" },
+  { id: "page-dashboard", label: "Dashboard", path: "/", icon: LayoutDashboard, keywords: "home overview" },
+  { id: "page-copilot", label: "AI Copilot", path: "/copilot", icon: Bot, keywords: "chat ai assistant" },
+  { id: "page-employees", label: "Employees", path: "/employees", icon: Users, keywords: "people team staff" },
+  { id: "page-workflow", label: "Workflow", path: "/workflow", icon: GitBranch, keywords: "approval process" },
+  { id: "page-inventory", label: "Inventory", path: "/inventory", icon: Package, keywords: "products stock" },
+  { id: "page-documents", label: "Documents", path: "/documents", icon: FileText, keywords: "files reports" },
+  { id: "page-analytics", label: "Analytics", path: "/analytics", icon: BarChart3, keywords: "charts metrics" },
+  { id: "page-settings", label: "Settings", path: "/settings", icon: Settings, keywords: "preferences config" },
 ];
 
 interface SearchResult {

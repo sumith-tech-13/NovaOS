@@ -4,6 +4,7 @@ import { forwardRef } from "react";
 const variants = {
   default: "bg-surface-tertiary text-text-secondary",
   primary: "bg-brand-50 text-brand-700 dark:bg-brand-500/10 dark:text-brand-400",
+  secondary: "bg-surface-secondary text-text-secondary border border-border",
   success: "bg-success-50 text-success-700 dark:bg-success-900/20 dark:text-success-400",
   warning: "bg-warning-50 text-warning-700 dark:bg-warning-900/20 dark:text-warning-400",
   danger: "bg-danger-50 text-danger-700 dark:bg-danger-900/20 dark:text-danger-400",
@@ -21,10 +22,11 @@ interface BadgeProps {
   size?: keyof typeof sizes;
   children: React.ReactNode;
   className?: string;
+  dot?: boolean;
 }
 
 export const Badge = forwardRef<HTMLSpanElement, BadgeProps>(
-  ({ variant = "default", size = "md", children, className }, ref) => {
+  ({ variant = "default", size = "md", children, className, dot }, ref) => {
     return (
       <span
         ref={ref}
@@ -35,6 +37,7 @@ export const Badge = forwardRef<HTMLSpanElement, BadgeProps>(
           className,
         )}
       >
+        {dot && <span className={cn("h-1.5 w-1.5 rounded-full mr-1", variant === "success" ? "bg-success-500" : variant === "warning" ? "bg-warning-500" : variant === "danger" ? "bg-danger-500" : "bg-text-tertiary")} />}
         {children}
       </span>
     );
